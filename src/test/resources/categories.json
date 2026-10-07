@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Ошибки проверок (AssertionError)",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*(AssertionError|expected \\[).*"
+  },
+  {
+    "name": "Элемент не найден (NoSuchElementException)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(NoSuchElementException|no such element|Unable to locate element).*"
+  },
+  {
+    "name": "Таймаут явного ожидания (TimeoutException)",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(TimeoutException|Expected condition failed).*"
+  },
+  {
+    "name": "Проблемы с запуском браузера или драйвера",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*(SessionNotCreatedException|WebDriverException|Unable to obtain|binary is not a Firefox executable).*"
+  },
+  {
+    "name": "Пропущенные тесты",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Прочие дефекты продукта",
+    "matchedStatuses": ["failed", "broken"]
+  }
+]
