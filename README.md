@@ -1,16 +1,5 @@
 # Izteleuev Daniel Ruslanovich — SauceDemo UI-автотесты (Selenium + TestNG + Allure)
 
-Кроссбраузерные UI-автотесты SauceDemo по паттерну Page Object: 10 сценариев × Chrome / Firefox / Edge,
-параллельный headless-прогон, отчётность Allure (шаги, метки, вложения, окружение, категории дефектов).
-
-## Запуск
-
-```bash
-mvn clean test       # 10 сценариев × 3 браузера = 30 тестов, параллельно, headless
-mvn allure:report    # HTML-отчёт: target/site/allure-maven-plugin/index.html
-mvn allure:serve     # тот же отчёт на локальном сервере
-```
-
 ## Сценарии
 
 - [X] Авторизация: позитивный сценарий (`standard_user`)
@@ -18,22 +7,15 @@ mvn allure:serve     # тот же отчёт на локальном серве
 - [X] Авторизация: неверный пароль (негативный)
 - [X] Корзина: добавление товара
 - [X] Корзина: удаление товара
-- [X] Сортировка: по цене (Low → High)
-- [X] Сортировка: по названию (Z → A)
+- [X] Сортировка: по цене (Low -> High)
+- [X] Сортировка: по названию (Z -> A)
 - [X] Оформление заказа: полный цикл (Finish)
 - [X] Оформление заказа: валидация обязательных полей (негативный)
 - [X] Оформление заказа: отмена (Cancel)
 
-## Результат прогона
-
-```
-[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
-[INFO] BUILD SUCCESS
-```
-
 ## Скриншоты работы
 
-### 1. Кроссбраузерный прогон `mvn clean test` — Dashboard отчёта Allure
+### 1. Кроссбраузерный прогон Dashboard отчёта Allure
 
 ![Dashboard Allure](docs/screenshots/01-overview-dashboard.png)
 
